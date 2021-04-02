@@ -1,0 +1,116 @@
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+
+*{
+    
+    box-sizing: border-box;
+}
+body{
+    background-color:hsl(204, 43%, 93%) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:20px; 
+    font-family:'karla', sans-serif ;
+    margin: 0;
+    min-height: 150vh;
+    
+
+
+}
+main{
+    background-color: #fff;
+    max-width: 800px;
+    width:800px;
+    margin: auto;
+    border-radius: 10px; 
+    box-shadow: 0 5px 10px 10px rgba(0,0,0.3,0.05);
+    overflow: hidden;
+}
+.row{
+    display: flex;
+}
+.row > section{
+    flex: 1;
+}
+section{
+    padding: 35px;
+}
+h1{
+color: hsl(179, 47%, 52%);
+Font-size: 40px;
+}
+
+.yellow-text{
+    color:  hsl(71, 73%, 54%);
+}
+
+p{
+    font-size: 16px;
+    opacity: 0.9;
+
+    
+}
+p.light-black{
+    color:#999;
+    margin: 2px;
+}
+
+p.faded{
+    color: hsl(179, 43%,75%);
+    display: flex;
+    align-items: center;
+}
+p.faded span{
+    color: #fff;
+    font-size: 50px;
+    margin-right: 10px;
+}
+
+.cyan{
+    background-color: hsl(179, 47%, 52%);
+    color: #fff;
+}
+
+.grayish-blue{
+    background-color: hsl(179, 62%, 43%);
+    color: #fff;
+}
+button{
+    background-color:  hsl(71, 73%, 54%);
+    width: 100%;
+    padding: 15px 0;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'karla', sans-serif;
+    font-weight: 700;
+    border: none;
+    margin-top: 20px;
+}
+button:hover{
+    color :hsl(179, 62%, 43%)
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    opacity: 0.7;
+    
+}
+ul li{
+    line-height: 2;
+}
+.footer{
+    background-color: cyan;
+    text-align: center;
+    padding: 0.5px;
+    font-family: sans-serif;
+}
+
+/* mobile-responsive */
+    @media screen and (max-width:600px){
+        .row{
+            flex-direction: column;
+        }
+    }
